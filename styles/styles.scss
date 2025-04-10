@@ -1,0 +1,112 @@
+body{
+margin: 0;
+display: flex;
+background-color: #ffffff;
+height: 100vh;
+font-family: Arial, sans-serif;
+padding: 20px;
+}
+
+p, h1-h6, span{
+	margin: 0;
+}
+
+.todo-list{
+	margin-top: 2rem;
+	width: 100%;
+
+	&__wrapper{
+		width: 1000px;
+		max-height: 100vh;
+		margin: 0 auto;
+		background-color: #e4e0e0;
+		border-radius: 1rem;
+		box-shadow: 0rem 0rem 0.9rem 0.1rem #84039e;
+		overflow: hidden;
+	}
+
+	&__container{
+		display: flex;
+	}
+
+	&__title{
+		margin: 0;
+		padding-left:2rem ;
+		margin-left: 4rem;
+		padding-bottom: 1rem;
+		font-size: 3rem;
+		color: #333333;
+		font-weight: 900;
+
+	}
+
+	&__stats{
+		display: flex;
+		margin-left: auto;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__remaining-tasks{
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	&__completed-tasks{
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	&__input {
+    display: flex;
+	justify-content: center;
+	gap: 1rem;
+    margin-bottom: 3rem;
+	}
+
+	&__task-input{
+		padding: 1rem;
+		border: 1px solid aqua;
+		border-radius: 0.5rem;
+	}
+
+	&__add-task-button{
+		padding: 1rem ;
+		border-radius: 0.5rem;
+		background-color: #ffffff;
+		border: 1px solid aqua;
+		cursor: pointer;
+	}
+
+	&__task-list{
+		list-style-type: none;
+		margin: 0;
+		padding-bottom: 1rem;
+		overflow-y: auto;
+		max-height: 60vh;
+	}
+
+	&__task-item{
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		color: #333333;
+		display: flex;
+
+		&--completed{
+			text-decoration: line-through;
+			color: #888888;
+		}
+	}
+
+	&__task-input--complete{
+		border-radius: 100%;
+		margin-left: auto;
+	}
+
+	&__task-button--delete{
+		border-radius: 1rem;
+		padding: 0.5rem;
+		background-color: #ffffff;
+		border: 0.1rem solid #888888;
+	}
+}
